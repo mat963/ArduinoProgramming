@@ -25,7 +25,7 @@ void setup() {
   // RED/FED in ns (z. B. 200 ns je Flanke)
   mcpwm_deadtime_enable(MCPWM_UNIT_0, MCPWM_TIMER_0,
                         MCPWM_ACTIVE_HIGH_COMPLIMENT_MODE,
-                        1, 1);
+                        1, 1);// bei 1 entspricht 200ns, 0 entspricht 100ns, 2 entspricht 300ns, 3 entspricht 400ns
 }
 
 void loop() {
